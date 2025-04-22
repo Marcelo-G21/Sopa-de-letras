@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Cute;
+  /* src: url('./assets/fonts/Vividly-Regular.ttf'); */
+  src: url("./assets/fonts/CuteNotes.ttf");
+}
+
+@theme {
+  --font-cute: Cute, "sans-serif";
+}
+
+body {
+  @apply font-cute bg-[#FFE6E6] text-[#001858];
+  margin: 0;
+  padding: 0;
+  align-content: center;
+}
+
+html {
+  height: 100%;
+  align-content: center;
+}
