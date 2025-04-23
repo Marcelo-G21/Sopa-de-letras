@@ -11,6 +11,7 @@ const App = () => {
         <Route path="/" element={<CategoryMenu />} />
         <Route path="/category/:name" element={<LevelSelector />} />
         <Route path="/category/:name/level/:level" element={<WordSearchGame />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
